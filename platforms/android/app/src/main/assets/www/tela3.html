@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/tela2.css">
+	<title>App</title>
+	
+</head>
+
+<body>
+      
+      
+	  <input type="checkbox" id="chec">
+	  
+	  <label for = "chec">
+	  
+      <a href="tela2.html"><img src="img/seta.png"  class="menu-toggle"></a>
+	  
+      </label>
+	  
+      
+      <div class="painel">
+            <span>Instrumentos</span>
+      </div>
+	
+		
+		   <center>
+		    
+			<h2>Cadastrar instrumento<h2>
+			
+		   </center>	
+			
+			
+		   <center>	
+		   <input type="text" id="insInput" placeholder="Instrumento" class="id"/>
+		   <input type="text" id="marcInput" placeholder="Marca" class="id"/>
+		   <input type="text" id="tuInput" placeholder="tempo de uso" class="id"/>
+		   <input type="text" id="telInput" placeholder="Telefone para contato" class="id"/>
+		   </center>
+		   
+		   
+		   <br><br><center>
+		   <button class="bt" id="addButton">Cadastrar</button>
+		   </center>
+		   
+		   <center>
+		   
+		   <h3>Meus instrumentos:</h3>
+		   
+		   <ul id="userList"></ul>
+		   <hr>
+		   
+		   </center>
+	           
+	<script src="cordova.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
+	<script src="js/app.js"></script>
+    <script src="js/real-time-database.js"></script>
+	
+</body>
+</html>

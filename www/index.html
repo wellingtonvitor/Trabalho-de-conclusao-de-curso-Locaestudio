@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+     
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta charset= "utf-8">
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<title>App</title>
+	
+	
+
+	
+  </head>
+
+  <body>
+  
+      <div class="container">
+	        
+			
+		    <center>
+		
+            	<div>
+				     
+					<img src="img/lo.png">
+					 
+					<center>
+					<label>Locaestúdios</label> 
+					</center>
+					 
+				</div>
+				
+			     
+				
+                <br>				
+				 
+                <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase.js"></script>
+	
+	            <script>
+	
+	            var config = {
+                apiKey: "<Sua API>",
+                authDomain: "<Seu authDomain>",
+                databaseURL: "<Seu databaseURL>",
+                projectId: "<Seu projectId>",
+                storageBucket: "<Seu storageBucket>",
+                messagingSenderId: "",
+                 appId: ""
+                };
+		
+		        firebase.initializeApp(config);
+	
+	
+	            registerUser=()=>{
+		        user_email = document.getElementById("email").value
+		        user_pwd = document.getElementById("pwd").value
+				
+		        firebase.auth().createUserWithEmailAndPassword(user_email,user_pwd ).then(function(resp){
+		        console.log(resp)
+                alert("usúario criado!")			
+		        }).catch(function (err){
+				
+		        console.log(err)
+			    console.log(err.message)
+		        })
+				
+		        }
+				
+				loginNow=()=>{
+				 user_email = document.getElementById("email").value
+				 user_pwd = document.getElementById("pwd").value
+				 
+				 firebase.auth().signInWithEmailAndPassword(user_email, user_pwd).then(function (resp){
+				    console.log(resp)
+					// alert("")
+					window.location.replace('tela2.html');
+					
+				 }).catch(function (err) {
+				   console.log(err)
+				   console.log(err.message)
+				 })
+				 
+				}
+				
+	            </script>
+		        
+				<input type="text" class="controle" placeholder="Insira seu nome"/>
+				<input type="email" id="email" class="controle" placeholder="Email"/>
+			    <input type="password" id="pwd" class="controle" placeholder="Senha"/>
+					
+			    <button onclick="loginNow()" class="btn">Login</button>
+				
+				<br><br>
+				<h1>Novo por aqui? Crie uma conta<h1>
+				
+					 
+					<button onclick="registerUser()" class="btn">Cadastrar</button>
+					 
+					
+                 				
+	        </center>		     
+			
+	  </div>
+	  
+	<script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>

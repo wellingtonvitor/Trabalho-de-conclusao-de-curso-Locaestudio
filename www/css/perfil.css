@@ -1,0 +1,141 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	text-decoration: none;
+}
+
+header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	background: #68228B;
+    width: 100%;
+    box-sizing: border-box;	
+}
+
+img{
+    width: 110px;
+	
+}
+
+header .logo
+{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+	font-weight: bold;
+	
+}
+
+header nav{
+	float: right;
+	color: white;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+}
+
+header nav ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active{
+	color: white;
+	background: #21966F3;
+}
+
+.menu-toggle{
+	color: #fff;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+
+	header
+	{
+		padding: 0 20px;
+	}
+    .menu-toggle{
+	    display: block;	
+	}
+	header nav
+	{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #333;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+	header nav.active{
+		left: 0;
+	}
+	
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+     
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0, 0, 0, .2);
+	} 
+	
+.painel{
+	background: #7D26CD;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+}
+
+.painel span{
+	font-size: 25px;
+	line-height: 70px;
+	color: white;
+	font-weight: bold;
+}
+
+.btn{
+	width: 60%;
+	height: 40px;
+	background: #AB82FF;
+	color: white;
+	margin: 8px;
+	margin-bottom: center;
+	border: 0;
+	border-radius: 5px;
+}
+
+.btn-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	border: 0;
+	color: white;
+	background: #7D26CD;
+}
+
+h1{
+	text-align: center;
+}
+

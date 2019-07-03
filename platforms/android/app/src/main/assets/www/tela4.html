@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+     
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/tela3.css"/>
+		
+        <title>App</title>
+		
+		
+    </head>
+	
+<body>
+        
+	<input type="checkbox" id="chec">
+	  
+	  <label for = "chec">
+	  
+        <a href="tela2.html"><img src="img/seta.png"  class="menu-toggle"></a>
+	  
+      </label>
+	  
+    <div class="painel">
+        <span>Estúdios</span>
+    </div>  
+	
+  <center> 
+	<h2>Cadastrar Estúdios</h2>
+  </center>	
+  
+    <center>
+	<input id="nomeInput" placeholder="Nome do estúdio" class="control"/>
+	<input id="endInput" placeholder="Endereço" class="control"/>
+	<input id="telInput" placeholder="Telefone" class="control"/>
+	<input id="cnpjInput" placeholder="CNPJ" class="control">
+	</center>
+	
+	<br><center>
+	<button id="addButton" class="btn">Cadastrar</button>
+	<a href="tela5.html"><button class="btn">Ver no mapa</button></a>
+	</center>
+	
+	<center>
+	
+    <h3>Meus estúdios: </h3>
+		
+        <ul id="userList"></ul>
+        <hr>
+	
+	</center>
+	
+	<script src="cordova.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase.js"></script>
+	<script src="js/app2.js"></script>
+	<script src="js/real-time-database1.js"></script>
+	
+</body>
+</html>
+
